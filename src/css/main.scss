@@ -1,0 +1,44 @@
+@import "mq";
+
+$color-1:#adfdc8;
+$color-2:#fdadba;
+
+b, strong, i, cite, em, var, address, dfn {
+    padding: 10px !important;
+    
+    display: block !important;
+    clear:both !important;
+    font-family: "Guardian Text Sans Web", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight:normal;
+    background-color: $color-1 !important;
+
+}
+
+b, strong, i, cite, em, var, address, dfn {
+	    margin-left: 20px !important;
+    @include mq(tablet){
+    	margin-left: 30px !important;
+    }
+}
+i, cite, em, var, address, dfn {
+	margin-left: 0 !important;
+    margin-right: 20px !important;
+    font-style:normal !important;
+    background-color: $color-2 !important;
+
+    @include mq(tablet){
+    	margin-right: 30px !important;
+    }
+    
+
+}
+
+h2{
+	padding: 0 !important;
+	background-color: none !important;
+	b, strong {
+		padding: 0 !important;
+		background-color: none !important;
+	}
+}
